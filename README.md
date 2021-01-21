@@ -1,6 +1,6 @@
 # Solita Kotlin Backend
 
-Super simple backend with Kotlin and Ktor for Solita Names app
+Super simple Kotlin and Ktor backend for Solita Names app. Built with Gradle.
 
 # Frontend
 
