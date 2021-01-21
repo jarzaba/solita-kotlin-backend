@@ -1,4 +1,4 @@
-package com.example
+package jb.solitabackend
 
 import io.ktor.application.*
 import io.ktor.response.*
@@ -14,9 +14,8 @@ class ApplicationTest {
     @Test
     fun testRoot() {
         withTestApplication({ module(testing = true) }) {
-            handleRequest(HttpMethod.Get, "/").apply {
+            handleRequest(HttpMethod.Get, "/api/names").apply {
                 assertEquals(HttpStatusCode.OK, response.status())
-                assertEquals("HELLO WORLD!", response.content)
             }
         }
     }
